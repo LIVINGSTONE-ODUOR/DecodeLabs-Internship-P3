@@ -1,0 +1,5 @@
+import { useEffect, useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { testimonials } from '../../utils/constants';
+import TestimonialCard from '../features/TestimonialCard';
+export default function TestimonialsSection() { const [index,setIndex]=useState(0); useEffect(()=>{ const id=setInterval(()=>setIndex(i=>(i+1)%testimonials.length),4500); return()=>clearInterval(id);},[]); return <section className="section-pad bg-slate-50 dark:bg-slate-900"><div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"><div className="mx-auto max-w-3xl text-center"><p className="font-bold text-primary">Client proof</p><h2 className="mt-3 font-display text-4xl font-black">Trusted by teams with real operational stakes.</h2></div><div className="mt-12 grid gap-6 lg:grid-cols-3"><AnimatePresence mode="popLayout">{[0,1,2].map((offset)=><motion.div key={(index+offset)%testimonials.length} initial={{ opacity:0, y:16 }} animate={{ opacity:1, y:0 }} exit={{ opacity:0, y:-16 }}><TestimonialCard item={testimonials[(index+offset)%testimonials.length]}/></motion.div>)}</AnimatePresence></div></div></section>; }

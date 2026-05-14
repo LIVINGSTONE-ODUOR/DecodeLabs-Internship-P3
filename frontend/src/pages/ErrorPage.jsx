@@ -1,0 +1,2 @@
+import Button from '../components/ui/Button';
+export default function ErrorPage() { return <main className="grid min-h-screen place-items-center bg-slate-950 px-4 text-center text-white"><div><p className="text-8xl font-black text-error">500</p><h1 className="mt-4 font-display text-4xl font-black">Something needs attention.</h1><p className="mx-auto mt-4 max-w-md text-slate-300">Refresh the page or return to the main site while the service recovers.</p><Button onClick={()=>location.reload()} className="mt-8">Retry</Button></div></main>; }

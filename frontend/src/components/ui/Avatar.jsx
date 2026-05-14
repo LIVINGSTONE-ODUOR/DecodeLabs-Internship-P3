@@ -1,0 +1,2 @@
+import { initials } from '../../utils/formatters';
+export default function Avatar({ name = 'Stone Tech', src, className = '' }) { return src ? <img src={src} alt={name} className={`h-10 w-10 rounded-full object-cover ${className}`} /> : <span className={`grid h-10 w-10 place-items-center rounded-full bg-gradient-to-br from-primary to-secondary text-sm font-bold text-white ${className}`}>{initials(name)}</span>; }

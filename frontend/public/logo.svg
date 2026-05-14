@@ -1,0 +1,8 @@
+<svg width="220" height="48" viewBox="0 0 220 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="48" height="48" rx="12" fill="url(#g)"/>
+  <path d="M15 31L24 12L33 31H28.6L26.9 27H21L19.4 31H15ZM22.3 23.6H25.7L24 19.2L22.3 23.6Z" fill="white"/>
+  <path d="M60 17H87V22H60V17ZM60 27H80V32H60V27Z" fill="#0F172A"/>
+  <text x="93" y="22" fill="#0F172A" font-family="Inter, Arial" font-size="15" font-weight="800">STONE TECH</text>
+  <text x="93" y="36" fill="#0A66FF" font-family="Inter, Arial" font-size="11" font-weight="700">SOLUTIONS</text>
+  <defs><linearGradient id="g" x1="0" y1="0" x2="48" y2="48"><stop stop-color="#0A66FF"/><stop offset="1" stop-color="#06B6D4"/></linearGradient></defs>
+</svg>

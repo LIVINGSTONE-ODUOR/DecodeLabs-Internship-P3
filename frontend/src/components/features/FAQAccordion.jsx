@@ -1,0 +1,4 @@
+import { useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
+import { HiChevronDown } from 'react-icons/hi';
+export default function FAQAccordion({ item }) { const [open,setOpen]=useState(false); return <div className="rounded-2xl border border-slate-200 bg-white/70 dark:border-white/10 dark:bg-slate-900/50"><button onClick={()=>setOpen(!open)} className="flex w-full items-center justify-between gap-4 p-5 text-left font-bold"><span>{item.question}</span><HiChevronDown className={`shrink-0 transition ${open ? 'rotate-180 text-primary' : ''}`} /></button><AnimatePresence>{open && <motion.div initial={{ height:0, opacity:0 }} animate={{ height:'auto', opacity:1 }} exit={{ height:0, opacity:0 }} className="overflow-hidden"><p className="px-5 pb-5 leading-7 text-slate-600 dark:text-slate-300">{item.answer}</p></motion.div>}</AnimatePresence></div>; }

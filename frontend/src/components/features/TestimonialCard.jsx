@@ -1,0 +1,3 @@
+import Avatar from '../ui/Avatar';
+import { FaQuoteLeft, FaStar } from 'react-icons/fa';
+export default function TestimonialCard({ item }) { return <div className="glass min-h-72 rounded-2xl p-6"><FaQuoteLeft className="text-2xl text-primary" /><p className="mt-4 leading-7 text-slate-700 dark:text-slate-200">“{item.quote}”</p><div className="mt-5 flex text-warning">{Array.from({ length: 5 }).map((_,i)=><FaStar key={i}/>)}</div><div className="mt-6 flex items-center gap-3"><Avatar name={item.name}/><div><p className="font-bold">{item.name}</p><p className="text-sm text-slate-500">{item.role}, {item.company}</p></div></div></div>; }
