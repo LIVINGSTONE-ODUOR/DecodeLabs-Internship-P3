@@ -15,7 +15,6 @@ Express API for STONE TECH SOLUTIONS using Supabase Auth, Supabase Postgres, val
 - `SUPABASE_SERVICE_ROLE_KEY`
 - `AI_API_KEY`
 - `OPENAI_MODEL`
-- `CORS_ORIGIN`
 
 ## API
 - `POST /api/v1/auth/register`

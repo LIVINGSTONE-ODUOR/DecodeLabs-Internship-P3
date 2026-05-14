@@ -47,7 +47,7 @@ frontend/
 3. Run the SQL in `stone-tech-backend/database/001_supabase_schema.sql` inside the Supabase SQL editor.
 4. Backend install/start: `npm install && npm run dev`.
 5. Frontend: `cd ../frontend && cp .env.example .env`.
-6. Frontend install/start: `npm install && npm run dev`.
+6. Frontend install/start: `npm install && npm run dev`
 
 ## Supabase Setup
 Use project URL `https://zkmqyiaxwsgvgjjjrtge.supabase.co`. In Supabase, open SQL Editor, paste `stone-tech-backend/database/001_supabase_schema.sql`, and run it. Keep `SUPABASE_SERVICE_ROLE_KEY` only on the backend.

@@ -6,7 +6,7 @@ Premium React/Vite frontend for STONE TECH SOLUTIONS.
 React 18, Vite, Tailwind CSS, Framer Motion, React Router, Axios, React Hook Form, React Hot Toast, React Icons, React Intersection Observer, React CountUp, React Loading Skeleton, React Helmet Async.
 
 ## Local setup
-1. Copy `.env.example` to `.env`.
+1. Copy `.env.example` to `.env`
 2. Set `VITE_API_BASE_URL=http://localhost:4000/api/v1`.
 3. Run `npm install`.
 4. Run `npm run dev`.
